@@ -1,0 +1,1215 @@
+{
+  "count": 100,
+  "crossing_policy": "both",
+  "white_policy": "background",
+  "pixel_counts": {
+    "background": 219682384,
+    "artery": 9195159,
+    "vein": 11095273,
+    "crossing": 383762,
+    "uncertain": 182814
+  },
+  "note": "Mapping choices are not confirmed TFFM author preprocessing.",
+  "samples": [
+    {
+      "id": "001_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\001_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\001_G.png",
+      "pixel_counts": {
+        "background": 1486841,
+        "artery": 65580,
+        "vein": 81546,
+        "crossing": 3754,
+        "uncertain": 679
+      }
+    },
+    {
+      "id": "002_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\002_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\002_N.png",
+      "pixel_counts": {
+        "background": 1473637,
+        "artery": 66605,
+        "vein": 95309,
+        "crossing": 2612,
+        "uncertain": 237
+      }
+    },
+    {
+      "id": "003_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\003_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\003_N.png",
+      "pixel_counts": {
+        "background": 1488782,
+        "artery": 57799,
+        "vein": 89524,
+        "crossing": 2295,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "004_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\004_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\004_D.png",
+      "pixel_counts": {
+        "background": 1520211,
+        "artery": 52207,
+        "vein": 63851,
+        "crossing": 1979,
+        "uncertain": 152
+      }
+    },
+    {
+      "id": "005_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\005_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\005_N.png",
+      "pixel_counts": {
+        "background": 1494420,
+        "artery": 67993,
+        "vein": 72910,
+        "crossing": 2143,
+        "uncertain": 934
+      }
+    },
+    {
+      "id": "006_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\006_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\006_A.png",
+      "pixel_counts": {
+        "background": 1484883,
+        "artery": 79028,
+        "vein": 71660,
+        "crossing": 2708,
+        "uncertain": 121
+      }
+    },
+    {
+      "id": "007_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\007_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\007_N.png",
+      "pixel_counts": {
+        "background": 1487243,
+        "artery": 80761,
+        "vein": 64330,
+        "crossing": 2037,
+        "uncertain": 4029
+      }
+    },
+    {
+      "id": "008_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\008_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\008_N.png",
+      "pixel_counts": {
+        "background": 4886099,
+        "artery": 184048,
+        "vein": 208412,
+        "crossing": 3645,
+        "uncertain": 8548
+      }
+    },
+    {
+      "id": "009_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\009_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\009_D.png",
+      "pixel_counts": {
+        "background": 4839397,
+        "artery": 201116,
+        "vein": 234695,
+        "crossing": 6498,
+        "uncertain": 9046
+      }
+    },
+    {
+      "id": "010_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\010_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\010_D.png",
+      "pixel_counts": {
+        "background": 4869521,
+        "artery": 178224,
+        "vein": 226542,
+        "crossing": 7668,
+        "uncertain": 8797
+      }
+    },
+    {
+      "id": "011_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\011_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\011_N.png",
+      "pixel_counts": {
+        "background": 4909677,
+        "artery": 170972,
+        "vein": 198871,
+        "crossing": 5633,
+        "uncertain": 5599
+      }
+    },
+    {
+      "id": "012_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\012_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\012_N.png",
+      "pixel_counts": {
+        "background": 4865584,
+        "artery": 207008,
+        "vein": 210256,
+        "crossing": 4751,
+        "uncertain": 3153
+      }
+    },
+    {
+      "id": "013_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\013_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\013_A.png",
+      "pixel_counts": {
+        "background": 1465077,
+        "artery": 73195,
+        "vein": 95357,
+        "crossing": 2891,
+        "uncertain": 1880
+      }
+    },
+    {
+      "id": "014_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\014_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\014_D.png",
+      "pixel_counts": {
+        "background": 1466709,
+        "artery": 83742,
+        "vein": 84534,
+        "crossing": 2790,
+        "uncertain": 625
+      }
+    },
+    {
+      "id": "015_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\015_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\015_N.png",
+      "pixel_counts": {
+        "background": 1461475,
+        "artery": 75136,
+        "vein": 95428,
+        "crossing": 5052,
+        "uncertain": 1309
+      }
+    },
+    {
+      "id": "016_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\016_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\016_N.png",
+      "pixel_counts": {
+        "background": 1468220,
+        "artery": 79969,
+        "vein": 87279,
+        "crossing": 2898,
+        "uncertain": 34
+      }
+    },
+    {
+      "id": "017_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\017_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\017_G.png",
+      "pixel_counts": {
+        "background": 1466476,
+        "artery": 82100,
+        "vein": 85411,
+        "crossing": 4081,
+        "uncertain": 332
+      }
+    },
+    {
+      "id": "018_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\018_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\018_N.png",
+      "pixel_counts": {
+        "background": 4889258,
+        "artery": 175880,
+        "vein": 217702,
+        "crossing": 6021,
+        "uncertain": 1891
+      }
+    },
+    {
+      "id": "019_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\019_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\019_G.png",
+      "pixel_counts": {
+        "background": 1511344,
+        "artery": 63627,
+        "vein": 60095,
+        "crossing": 3084,
+        "uncertain": 250
+      }
+    },
+    {
+      "id": "020_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\020_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\020_N.png",
+      "pixel_counts": {
+        "background": 4868226,
+        "artery": 187629,
+        "vein": 228146,
+        "crossing": 5957,
+        "uncertain": 794
+      }
+    },
+    {
+      "id": "021_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\021_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\021_N.png",
+      "pixel_counts": {
+        "background": 4855887,
+        "artery": 203934,
+        "vein": 221496,
+        "crossing": 6799,
+        "uncertain": 2636
+      }
+    },
+    {
+      "id": "022_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\022_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\022_N.png",
+      "pixel_counts": {
+        "background": 1471607,
+        "artery": 76399,
+        "vein": 87476,
+        "crossing": 2571,
+        "uncertain": 347
+      }
+    },
+    {
+      "id": "023_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\023_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\023_N.png",
+      "pixel_counts": {
+        "background": 1484139,
+        "artery": 70310,
+        "vein": 80366,
+        "crossing": 2854,
+        "uncertain": 731
+      }
+    },
+    {
+      "id": "024_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\024_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\024_N.png",
+      "pixel_counts": {
+        "background": 1481331,
+        "artery": 62237,
+        "vein": 91672,
+        "crossing": 2806,
+        "uncertain": 354
+      }
+    },
+    {
+      "id": "025_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\025_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\025_G.png",
+      "pixel_counts": {
+        "background": 4911059,
+        "artery": 174137,
+        "vein": 183680,
+        "crossing": 7668,
+        "uncertain": 14208
+      }
+    },
+    {
+      "id": "026_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\026_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\026_G.png",
+      "pixel_counts": {
+        "background": 4890189,
+        "artery": 183323,
+        "vein": 209248,
+        "crossing": 6555,
+        "uncertain": 1437
+      }
+    },
+    {
+      "id": "027_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\027_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\027_G.png",
+      "pixel_counts": {
+        "background": 4929579,
+        "artery": 176079,
+        "vein": 178451,
+        "crossing": 6643,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "028_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\028_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\028_G.png",
+      "pixel_counts": {
+        "background": 4883638,
+        "artery": 188824,
+        "vein": 197866,
+        "crossing": 8017,
+        "uncertain": 12407
+      }
+    },
+    {
+      "id": "029_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\029_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\029_D.png",
+      "pixel_counts": {
+        "background": 4887964,
+        "artery": 148044,
+        "vein": 248265,
+        "crossing": 6479,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "030_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\030_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\030_A.png",
+      "pixel_counts": {
+        "background": 1467224,
+        "artery": 78197,
+        "vein": 90103,
+        "crossing": 2797,
+        "uncertain": 79
+      }
+    },
+    {
+      "id": "031_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\031_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\031_G.png",
+      "pixel_counts": {
+        "background": 1489526,
+        "artery": 67725,
+        "vein": 77432,
+        "crossing": 3209,
+        "uncertain": 508
+      }
+    },
+    {
+      "id": "032_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\032_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\032_A.png",
+      "pixel_counts": {
+        "background": 1495686,
+        "artery": 64784,
+        "vein": 75232,
+        "crossing": 2646,
+        "uncertain": 52
+      }
+    },
+    {
+      "id": "033_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\033_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\033_G.png",
+      "pixel_counts": {
+        "background": 1485173,
+        "artery": 65587,
+        "vein": 80562,
+        "crossing": 4409,
+        "uncertain": 2669
+      }
+    },
+    {
+      "id": "034_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\034_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\034_G.png",
+      "pixel_counts": {
+        "background": 1482824,
+        "artery": 69251,
+        "vein": 82254,
+        "crossing": 2887,
+        "uncertain": 1184
+      }
+    },
+    {
+      "id": "035_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\035_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\035_A.png",
+      "pixel_counts": {
+        "background": 1483117,
+        "artery": 72316,
+        "vein": 79949,
+        "crossing": 3018,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "036_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\036_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\036_A.png",
+      "pixel_counts": {
+        "background": 4876671,
+        "artery": 160319,
+        "vein": 236320,
+        "crossing": 6110,
+        "uncertain": 11332
+      }
+    },
+    {
+      "id": "037_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\037_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\037_N.png",
+      "pixel_counts": {
+        "background": 4905008,
+        "artery": 151688,
+        "vein": 222675,
+        "crossing": 5104,
+        "uncertain": 6277
+      }
+    },
+    {
+      "id": "038_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\038_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\038_N.png",
+      "pixel_counts": {
+        "background": 4877392,
+        "artery": 155910,
+        "vein": 251534,
+        "crossing": 5916,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "039_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\039_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\039_N.png",
+      "pixel_counts": {
+        "background": 1484515,
+        "artery": 74474,
+        "vein": 76803,
+        "crossing": 2438,
+        "uncertain": 170
+      }
+    },
+    {
+      "id": "040_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\040_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\040_G.png",
+      "pixel_counts": {
+        "background": 1476783,
+        "artery": 65014,
+        "vein": 92913,
+        "crossing": 3110,
+        "uncertain": 580
+      }
+    },
+    {
+      "id": "041_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\041_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\041_N.png",
+      "pixel_counts": {
+        "background": 1489985,
+        "artery": 67904,
+        "vein": 77478,
+        "crossing": 2556,
+        "uncertain": 477
+      }
+    },
+    {
+      "id": "042_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\042_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\042_A.png",
+      "pixel_counts": {
+        "background": 1477769,
+        "artery": 74979,
+        "vein": 75596,
+        "crossing": 2861,
+        "uncertain": 7195
+      }
+    },
+    {
+      "id": "043_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\043_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\043_N.png",
+      "pixel_counts": {
+        "background": 1483826,
+        "artery": 65024,
+        "vein": 86427,
+        "crossing": 3123,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "044_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\044_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\044_N.png",
+      "pixel_counts": {
+        "background": 1479050,
+        "artery": 72100,
+        "vein": 84582,
+        "crossing": 2668,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "045_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\045_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\045_A.png",
+      "pixel_counts": {
+        "background": 1486654,
+        "artery": 73097,
+        "vein": 70969,
+        "crossing": 1977,
+        "uncertain": 5703
+      }
+    },
+    {
+      "id": "046_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\046_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\046_N.png",
+      "pixel_counts": {
+        "background": 4848280,
+        "artery": 186826,
+        "vein": 240984,
+        "crossing": 6508,
+        "uncertain": 8154
+      }
+    },
+    {
+      "id": "047_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\047_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\047_A.png",
+      "pixel_counts": {
+        "background": 1485914,
+        "artery": 68172,
+        "vein": 80779,
+        "crossing": 2202,
+        "uncertain": 1333
+      }
+    },
+    {
+      "id": "048_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\048_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\048_D.png",
+      "pixel_counts": {
+        "background": 4900611,
+        "artery": 146240,
+        "vein": 235564,
+        "crossing": 7587,
+        "uncertain": 750
+      }
+    },
+    {
+      "id": "049_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\049_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\049_A.png",
+      "pixel_counts": {
+        "background": 1481490,
+        "artery": 76255,
+        "vein": 78029,
+        "crossing": 2626,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "050_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\050_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\050_A.png",
+      "pixel_counts": {
+        "background": 1475911,
+        "artery": 76344,
+        "vein": 81043,
+        "crossing": 2595,
+        "uncertain": 2507
+      }
+    },
+    {
+      "id": "051_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\051_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\051_A.png",
+      "pixel_counts": {
+        "background": 1483811,
+        "artery": 64459,
+        "vein": 86540,
+        "crossing": 2907,
+        "uncertain": 683
+      }
+    },
+    {
+      "id": "052_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\052_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\052_N.png",
+      "pixel_counts": {
+        "background": 1505250,
+        "artery": 57340,
+        "vein": 72990,
+        "crossing": 2820,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "053_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\053_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\053_A.png",
+      "pixel_counts": {
+        "background": 1471205,
+        "artery": 70082,
+        "vein": 92297,
+        "crossing": 2565,
+        "uncertain": 2251
+      }
+    },
+    {
+      "id": "054_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\054_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\054_G.png",
+      "pixel_counts": {
+        "background": 1475188,
+        "artery": 72601,
+        "vein": 85517,
+        "crossing": 3256,
+        "uncertain": 1838
+      }
+    },
+    {
+      "id": "055_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\055_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\055_A.png",
+      "pixel_counts": {
+        "background": 1494615,
+        "artery": 67618,
+        "vein": 71228,
+        "crossing": 2833,
+        "uncertain": 2106
+      }
+    },
+    {
+      "id": "056_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\056_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\056_A.png",
+      "pixel_counts": {
+        "background": 1498598,
+        "artery": 60475,
+        "vein": 75864,
+        "crossing": 2064,
+        "uncertain": 1399
+      }
+    },
+    {
+      "id": "057_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\057_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\057_A.png",
+      "pixel_counts": {
+        "background": 1504675,
+        "artery": 51211,
+        "vein": 78888,
+        "crossing": 3308,
+        "uncertain": 318
+      }
+    },
+    {
+      "id": "058_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\058_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\058_D.png",
+      "pixel_counts": {
+        "background": 1471823,
+        "artery": 67012,
+        "vein": 96676,
+        "crossing": 2591,
+        "uncertain": 298
+      }
+    },
+    {
+      "id": "059_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\059_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\059_D.png",
+      "pixel_counts": {
+        "background": 1486197,
+        "artery": 65200,
+        "vein": 84224,
+        "crossing": 1734,
+        "uncertain": 1045
+      }
+    },
+    {
+      "id": "060_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\060_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\060_N.png",
+      "pixel_counts": {
+        "background": 1489796,
+        "artery": 49851,
+        "vein": 91904,
+        "crossing": 4378,
+        "uncertain": 2471
+      }
+    },
+    {
+      "id": "061_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\061_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\061_A.png",
+      "pixel_counts": {
+        "background": 4901936,
+        "artery": 163927,
+        "vein": 211047,
+        "crossing": 7034,
+        "uncertain": 6808
+      }
+    },
+    {
+      "id": "062_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\062_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\062_G.png",
+      "pixel_counts": {
+        "background": 1477838,
+        "artery": 70985,
+        "vein": 85946,
+        "crossing": 3484,
+        "uncertain": 147
+      }
+    },
+    {
+      "id": "063_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\063_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\063_A.png",
+      "pixel_counts": {
+        "background": 1497251,
+        "artery": 64488,
+        "vein": 72445,
+        "crossing": 3410,
+        "uncertain": 806
+      }
+    },
+    {
+      "id": "064_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\064_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\064_D.png",
+      "pixel_counts": {
+        "background": 1477497,
+        "artery": 74865,
+        "vein": 81556,
+        "crossing": 3232,
+        "uncertain": 1250
+      }
+    },
+    {
+      "id": "065_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\065_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\065_A.png",
+      "pixel_counts": {
+        "background": 1494359,
+        "artery": 55859,
+        "vein": 84191,
+        "crossing": 2934,
+        "uncertain": 1057
+      }
+    },
+    {
+      "id": "066_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\066_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\066_N.png",
+      "pixel_counts": {
+        "background": 1508682,
+        "artery": 61201,
+        "vein": 64237,
+        "crossing": 2398,
+        "uncertain": 1882
+      }
+    },
+    {
+      "id": "067_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\067_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\067_G.png",
+      "pixel_counts": {
+        "background": 1468511,
+        "artery": 76360,
+        "vein": 87434,
+        "crossing": 4346,
+        "uncertain": 1749
+      }
+    },
+    {
+      "id": "068_A",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\068_A.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\068_A.png",
+      "pixel_counts": {
+        "background": 1527483,
+        "artery": 47341,
+        "vein": 61874,
+        "crossing": 1681,
+        "uncertain": 21
+      }
+    },
+    {
+      "id": "069_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\069_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\069_N.png",
+      "pixel_counts": {
+        "background": 1480549,
+        "artery": 69432,
+        "vein": 81333,
+        "crossing": 2153,
+        "uncertain": 4933
+      }
+    },
+    {
+      "id": "070_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\070_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\070_G.png",
+      "pixel_counts": {
+        "background": 1475998,
+        "artery": 73617,
+        "vein": 85385,
+        "crossing": 2487,
+        "uncertain": 913
+      }
+    },
+    {
+      "id": "071_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\071_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\071_N.png",
+      "pixel_counts": {
+        "background": 1462918,
+        "artery": 72383,
+        "vein": 98769,
+        "crossing": 4002,
+        "uncertain": 328
+      }
+    },
+    {
+      "id": "072_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\072_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\072_N.png",
+      "pixel_counts": {
+        "background": 1471748,
+        "artery": 79720,
+        "vein": 83160,
+        "crossing": 2697,
+        "uncertain": 1075
+      }
+    },
+    {
+      "id": "073_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\073_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\073_D.png",
+      "pixel_counts": {
+        "background": 1472252,
+        "artery": 69173,
+        "vein": 93847,
+        "crossing": 3081,
+        "uncertain": 47
+      }
+    },
+    {
+      "id": "074_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\074_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\074_N.png",
+      "pixel_counts": {
+        "background": 1492154,
+        "artery": 67309,
+        "vein": 75154,
+        "crossing": 3225,
+        "uncertain": 558
+      }
+    },
+    {
+      "id": "075_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\075_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\075_D.png",
+      "pixel_counts": {
+        "background": 1483007,
+        "artery": 71968,
+        "vein": 79688,
+        "crossing": 2558,
+        "uncertain": 1179
+      }
+    },
+    {
+      "id": "076_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\076_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\076_D.png",
+      "pixel_counts": {
+        "background": 1494406,
+        "artery": 55722,
+        "vein": 84222,
+        "crossing": 2748,
+        "uncertain": 1302
+      }
+    },
+    {
+      "id": "077_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\077_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\077_G.png",
+      "pixel_counts": {
+        "background": 1495207,
+        "artery": 60717,
+        "vein": 78767,
+        "crossing": 3459,
+        "uncertain": 250
+      }
+    },
+    {
+      "id": "078_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\078_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\078_D.png",
+      "pixel_counts": {
+        "background": 1473671,
+        "artery": 68328,
+        "vein": 90929,
+        "crossing": 4234,
+        "uncertain": 1238
+      }
+    },
+    {
+      "id": "079_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\079_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\079_N.png",
+      "pixel_counts": {
+        "background": 1496148,
+        "artery": 62144,
+        "vein": 73651,
+        "crossing": 2993,
+        "uncertain": 3464
+      }
+    },
+    {
+      "id": "080_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\080_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\080_N.png",
+      "pixel_counts": {
+        "background": 1471419,
+        "artery": 74152,
+        "vein": 88931,
+        "crossing": 2938,
+        "uncertain": 960
+      }
+    },
+    {
+      "id": "081_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\081_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\081_D.png",
+      "pixel_counts": {
+        "background": 1459433,
+        "artery": 82693,
+        "vein": 91794,
+        "crossing": 4480,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "082_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\082_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\082_N.png",
+      "pixel_counts": {
+        "background": 1488103,
+        "artery": 70697,
+        "vein": 77034,
+        "crossing": 2566,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "083_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\083_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\083_G.png",
+      "pixel_counts": {
+        "background": 1460231,
+        "artery": 88000,
+        "vein": 87005,
+        "crossing": 3164,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "084_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\084_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\084_D.png",
+      "pixel_counts": {
+        "background": 1466282,
+        "artery": 76318,
+        "vein": 91130,
+        "crossing": 4120,
+        "uncertain": 550
+      }
+    },
+    {
+      "id": "085_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\085_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\085_N.png",
+      "pixel_counts": {
+        "background": 1477233,
+        "artery": 73718,
+        "vein": 83811,
+        "crossing": 3487,
+        "uncertain": 151
+      }
+    },
+    {
+      "id": "086_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\086_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\086_N.png",
+      "pixel_counts": {
+        "background": 1500880,
+        "artery": 60889,
+        "vein": 70883,
+        "crossing": 3955,
+        "uncertain": 1793
+      }
+    },
+    {
+      "id": "087_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\087_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\087_D.png",
+      "pixel_counts": {
+        "background": 1495242,
+        "artery": 68291,
+        "vein": 71539,
+        "crossing": 2282,
+        "uncertain": 1046
+      }
+    },
+    {
+      "id": "088_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\088_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\088_G.png",
+      "pixel_counts": {
+        "background": 1479587,
+        "artery": 72057,
+        "vein": 82996,
+        "crossing": 3562,
+        "uncertain": 198
+      }
+    },
+    {
+      "id": "089_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\089_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\089_N.png",
+      "pixel_counts": {
+        "background": 1462918,
+        "artery": 72383,
+        "vein": 98769,
+        "crossing": 4002,
+        "uncertain": 328
+      }
+    },
+    {
+      "id": "090_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\090_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\090_G.png",
+      "pixel_counts": {
+        "background": 1477708,
+        "artery": 71552,
+        "vein": 85389,
+        "crossing": 3303,
+        "uncertain": 448
+      }
+    },
+    {
+      "id": "091_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\091_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\091_N.png",
+      "pixel_counts": {
+        "background": 1477216,
+        "artery": 78656,
+        "vein": 77317,
+        "crossing": 4608,
+        "uncertain": 603
+      }
+    },
+    {
+      "id": "092_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\092_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\092_N.png",
+      "pixel_counts": {
+        "background": 1474212,
+        "artery": 72582,
+        "vein": 86723,
+        "crossing": 4883,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "093_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\093_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\093_N.png",
+      "pixel_counts": {
+        "background": 1487207,
+        "artery": 61072,
+        "vein": 83394,
+        "crossing": 6727,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "094_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\094_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\094_N.png",
+      "pixel_counts": {
+        "background": 1487725,
+        "artery": 63497,
+        "vein": 83878,
+        "crossing": 2813,
+        "uncertain": 487
+      }
+    },
+    {
+      "id": "095_G",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\095_G.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\095_G.png",
+      "pixel_counts": {
+        "background": 1482484,
+        "artery": 71885,
+        "vein": 76778,
+        "crossing": 4825,
+        "uncertain": 2428
+      }
+    },
+    {
+      "id": "096_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\096_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\096_D.png",
+      "pixel_counts": {
+        "background": 1456106,
+        "artery": 83474,
+        "vein": 95725,
+        "crossing": 3095,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "097_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\097_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\097_D.png",
+      "pixel_counts": {
+        "background": 4856788,
+        "artery": 179571,
+        "vein": 242681,
+        "crossing": 11696,
+        "uncertain": 16
+      }
+    },
+    {
+      "id": "098_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\098_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\098_D.png",
+      "pixel_counts": {
+        "background": 4882119,
+        "artery": 180971,
+        "vein": 221317,
+        "crossing": 5930,
+        "uncertain": 415
+      }
+    },
+    {
+      "id": "099_D",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\099_D.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\099_D.png",
+      "pixel_counts": {
+        "background": 1479966,
+        "artery": 74486,
+        "vein": 80479,
+        "crossing": 3469,
+        "uncertain": 0
+      }
+    },
+    {
+      "id": "100_N",
+      "image": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\images\\100_N.png",
+      "annotation": "C:\\Users\\nnepo\\PycharmProjects\\TFFM-tests\\datasets\\fundus_avseg\\raw\\annotation\\100_N.png",
+      "pixel_counts": {
+        "background": 1494870,
+        "artery": 78715,
+        "vein": 60331,
+        "crossing": 2009,
+        "uncertain": 2475
+      }
+    }
+  ]
+}

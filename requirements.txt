@@ -1,0 +1,11 @@
+# Proposed reproducible environment, NOT the authors' unpublished environment.
+# Python 3.11. Install matching torch/torchvision CUDA wheels for your GPU first.
+torch
+torchvision
+timm
+monai
+numpy
+scipy
+scikit-image
+Pillow
+pytest
