@@ -18,7 +18,8 @@ from PIL import Image
 from data import AVDataset, read_manifest, write_manifest, generate_split
 from model import ModelConfig, TFFMSegmentationModel
 from paper_losses import make_loss
-from metrics import binary_metrics
+from metrics import binary_metrics, safe_overlap
+from interval_metrics import write_interval_report
 
 
 def save_json(path, value):
@@ -166,7 +167,7 @@ def train(args):
     src = Path(__file__).resolve().parent
     snapshot = out/'source'
     snapshot.mkdir(exist_ok=True)
-    for name in ('run.py','model.py','loss.py','paper_losses.py','data.py','metrics.py','requirements.txt'):
+    for name in ('run.py','model.py','loss.py','paper_losses.py','data.py','metrics.py','interval_metrics.py','requirements.txt'):
         p = src/name
         if p.exists():
             shutil.copy2(p,snapshot/name)
@@ -230,6 +231,8 @@ def train(args):
 
 def evaluate(args):
     seed_all(42)
+    if args.bootstrap_samples < 100 or not 0 < args.confidence < 1:
+        raise ValueError('Need bootstrap_samples >= 100 and confidence in (0,1)')
     if not 0 < args.threshold < 1:
         raise ValueError('threshold must be between 0 and 1')
     state = load_trusted(args.checkpoint)
@@ -254,15 +257,29 @@ def evaluate(args):
         for batch in loader:
             probs = model(batch['image'].to(args.device)).sigmoid().cpu().numpy()
             truths = batch['mask'].numpy() > .5
-            for sample_id,p,g in zip(batch['id'],probs,truths):
+            crossings = batch['crossing'].numpy() > .5
+            for sample_id,p,g,crossing_gt in zip(batch['id'],probs,truths,crossings):
                 pred = p >= args.threshold
                 # Combined means OR of A/V binary masks, NOT average A/V Dice.
+                # With two native outputs, a predicted crossing is the overlap
+                # of the artery and vein predictions.
+                crossing_pred = pred[0] & pred[1]
                 triples = [('combined',pred.any(0),g.any(0))]
                 if not args.combined_only:
-                    triples = [('artery',pred[0],g[0]),('vein',pred[1],g[1])] + triples
+                    triples = [('artery',pred[0],g[0]),
+                               ('vein',pred[1],g[1]),
+                               ('crossing',crossing_pred,crossing_gt[0])] + triples
                 for name, pp, gg in triples:
                     result = binary_metrics(pp,gg,args.skeleton_tolerance,args.junction_tolerance)
                     records.append({'id':sample_id,'class':name,**result})
+                # Background is complement of the TWO-CHANNEL union, not the
+                # original five-class RGB background when uncertain pixels differ.
+                bp, bg = ~pred.any(0), ~g.any(0)
+                bd, bi, bprec, brec = safe_overlap(bp, bg)
+                records.append({'id':sample_id, 'class':'background',
+                                'dice':float(bd), 'iou':float(bi),
+                                'precision':float(bprec), 'recall':float(brec),
+                                'accuracy':float(np.mean(bp == bg))})
                 if args.save_predictions:
                     folder = out/'predictions'/f'{sample_number:04d}'
                     folder.mkdir(parents=True,exist_ok=True)
@@ -271,19 +288,21 @@ def evaluate(args):
                     for channel,name in enumerate(('artery','vein')):
                         Image.fromarray(pred[channel].astype(np.uint8)*255).save(folder/f'{name}.png')
                     Image.fromarray(pred.any(0).astype(np.uint8)*255).save(folder/'combined.png')
+                    Image.fromarray(crossing_pred.astype(np.uint8)*255).save(folder/'crossing.png')
                 sample_number += 1
     with (out/'per_image.csv').open('w',newline='',encoding='utf-8') as f:
-        w = csv.DictWriter(f,fieldnames=list(records[0]))
+        fields = list(dict.fromkeys(k for r in records for k in r))
+        w = csv.DictWriter(f,fieldnames=fields)
         w.writeheader()
         w.writerows(records)
     summary = {}
     for name in sorted({r['class'] for r in records}):
         rr = [r for r in records if r['class']==name]
         summary[name] = {}
-        for key in records[0]:
+        for key in dict.fromkeys(k for r in rr for k in r):
             if key in ('id','class'):
                 continue
-            values = np.asarray([r[key] for r in rr],float)
+            values = np.asarray([r.get(key, float('nan')) for r in rr],float)
             summary[name][key] = {'mean':float(values.mean()),
                                   'std':float(values.std(ddof=0)) if np.isfinite(values).all() else None,
                                   'nonfinite':int((~np.isfinite(values)).sum())}
@@ -293,6 +312,18 @@ def evaluate(args):
               'skeleton_tolerance':args.skeleton_tolerance,'junction_tolerance':args.junction_tolerance,
               'aggregation':'per-image macro mean, at 512x512; fraction scores',
               'metrics':summary})
+    write_interval_report(
+        records, rows, out, samples=args.bootstrap_samples,
+        confidence=args.confidence, seed=args.bootstrap_seed,
+        context={'checkpoint_epoch':state['epoch'], 'checkpoint':str(args.checkpoint),
+                 'threshold':args.threshold, 'split':args.split,
+                 'external':args.external, 'data_sha256':digest,
+                 'image_size':[512,512], 'intensity':config['intensity'],
+                 'loss':config['loss'], 'baseline':config['baseline'],
+                 'skeleton_tolerance':args.skeleton_tolerance,
+                 'junction_tolerance':args.junction_tolerance,
+                 'postprocessing':None, 'fov_mask':False},
+    )
     print(json.dumps(summary,indent=2))
 
 
@@ -333,6 +364,9 @@ def main():
     p.add_argument('--batch-size',type=int,default=1)
     p.add_argument('--skeleton-tolerance',type=float,default=2.)
     p.add_argument('--junction-tolerance',type=float,default=3.)
+    p.add_argument('--bootstrap-samples',type=int,default=2000)
+    p.add_argument('--confidence',type=float,default=.95)
+    p.add_argument('--bootstrap-seed',type=int,default=42)
     p.add_argument('--device',default='cuda' if torch.cuda.is_available() else 'cpu')
     p.set_defaults(func=evaluate)
     args = parser.parse_args()

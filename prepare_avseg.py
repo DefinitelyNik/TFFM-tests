@@ -13,6 +13,10 @@ The background policy does NOT ignore pixels in the loss: white pixels become
 negative targets in both channels. The both policy labels them positive in
 both channels, without resolving their true artery/vein identity.
 Outputs are never overwritten. Validation of all input pairs precedes writing.
+
+Use `--export-crossing` to additionally write an independent crossing mask.
+Without it, the legacy two-channel export remains unchanged and the evaluator
+can only use the explicit `artery AND vein` fallback for crossings.
 """
 import argparse
 import csv
@@ -72,6 +76,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=Path('datasets/fundus_avseg'))
     parser.add_argument('--white-policy', choices=('background', 'both', 'error'), required=True)
+    parser.add_argument('--export-crossing', action='store_true',
+                        help='Write independent crossing masks and crossing column')
     parser.add_argument('--expected-count', type=int, default=100)
     args = parser.parse_args()
     root = args.root.resolve()
@@ -87,6 +93,8 @@ def main():
             f'Images without annotation: {sorted(set(images)-set(annotations))}; '
             f'annotations without image: {sorted(set(annotations)-set(images))}')
     outputs = [root / 'arteries', root / 'veins', root / 'samples.csv', root / 'conversion_report.json']
+    if args.export_crossing:
+        outputs.append(root / 'crossings')
     existing = [str(p) for p in outputs if p.exists()]
     if existing:
         raise FileExistsError('Refusing to overwrite existing outputs: ' + ', '.join(existing))
@@ -113,6 +121,8 @@ def main():
 
     (root / 'arteries').mkdir()
     (root / 'veins').mkdir()
+    if args.export_crossing:
+        (root / 'crossings').mkdir()
     rows = []
     for key in sorted(annotations):
         path = annotations[key]
@@ -129,14 +139,20 @@ def main():
         vein_path = root / 'veins' / (path.stem + '.png')
         Image.fromarray(artery.astype(np.uint8) * 255).save(artery_path)
         Image.fromarray(vein.astype(np.uint8) * 255).save(vein_path)
-        relative = lambda p: Path(os.path.relpath(p, root)).as_posix()
-        rows.append({'id': path.stem, 'image': relative(images[key]),
-                     'artery': relative(artery_path), 'vein': relative(vein_path)})
+        row = {'id': path.stem, 'image': relative(images[key]),
+               'artery': relative(artery_path), 'vein': relative(vein_path)}
+        if args.export_crossing:
+            crossing_path = root / 'crossings' / (path.stem + '.png')
+            Image.fromarray(green.astype(np.uint8) * 255).save(crossing_path)
+            row['crossing'] = relative(crossing_path)
+        rows.append(row)
     with (root / 'samples.csv').open('w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=['id', 'image', 'artery', 'vein'])
+        fields = ['id', 'image', 'artery', 'vein'] + (['crossing'] if args.export_crossing else [])
+        writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         writer.writerows(rows)
-    info = {'count': len(rows), 'crossing_policy': 'both',
+    info = {'count': len(rows), 'crossing_policy': 'independent_mask' if args.export_crossing else 'both',
+            'crossing_mask_exported': args.export_crossing,
             'white_policy': args.white_policy, 'pixel_counts': totals,
             'note': 'Mapping choices are not confirmed TFFM author preprocessing.',
             'samples': report}

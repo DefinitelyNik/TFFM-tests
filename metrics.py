@@ -93,6 +93,7 @@ def binary_metrics(p, g, skeleton_tolerance=2., junction_tolerance=3.):
     jp,jr,jf = junction_scores(sp,sg,junction_tolerance)
     cp,cg = components(p), components(g)
     return dict(dice=float(dice), iou=float(iou), precision=float(prec), recall=float(rec),
+                accuracy=float(np.mean(p == g)),
                 hd95=hd95(p,g), cldice=topology_cldice(p,g,sp,sg),
                 betti0_error=abs(cp-cg), pred_components=cp, gt_components=cg,
                 skeleton_f1=skeleton_f1(sp,sg,skeleton_tolerance),

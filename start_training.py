@@ -25,7 +25,11 @@ RUNS_DIR = PROJECT_DIR / "runs"
 # background: белые пиксели -> 0 в обоих каналах (НЕ ignore).
 # both: белые пиксели -> 1 в обоих каналах.
 WHITE_POLICY = "background"
-LOSS = "repository"  # "repository" либо "paper"
+LOSS = "repository"  # "repository" либо "paper"; меняется LOSS, не архитектура.
+BASELINE = False  # True отключает TFFM; это отдельная ablation, не режим paper.
+BOOTSTRAP_SAMPLES = 2000
+CONFIDENCE = 0.95
+BOOTSTRAP_SEED = 42
 SEED = 42
 EPOCHS = 500
 PATIENCE = 10
@@ -184,7 +188,7 @@ def prepare_data():
 
 
 def main():
-    required = ["run.py", "data.py", "model.py", "loss.py", "paper_losses.py", "metrics.py"]
+    required = ["run.py", "data.py", "model.py", "loss.py", "paper_losses.py", "metrics.py", "interval_metrics.py"]
     if not MANIFEST.is_file() and not (DATASET_DIR / "samples.csv").is_file():
         required.append("prepare_avseg.py")
     missing = [name for name in required if not (PROJECT_DIR / name).is_file()]
@@ -229,7 +233,8 @@ def main():
         out = resume.parent
     else:
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-        out = RUNS_DIR / f"tffm_{LOSS}_{stamp}"
+        prefix = "baseline" if BASELINE else "tffm"
+        out = RUNS_DIR / f"{prefix}_{LOSS}_{stamp}"
     arguments = [
         "train", "--manifest", MANIFEST, "--out", out,
         "--device", device, "--loss", LOSS, "--seed", SEED,
@@ -238,11 +243,15 @@ def main():
         "--intensity", INTENSITY,
         "--pretrained" if PRETRAINED else "--no-pretrained",
     ]
+    if BASELINE:
+        arguments.append("--baseline")
     if not AUGMENTATION:
         arguments.append("--no-augmentation")
     if resume:
         arguments.extend(["--resume", resume])
     print(f"Результаты будут в: {out}", flush=True)
+    print(f"Loss: {LOSS}; TFFM включён: {not BASELINE}", flush=True)
+    print("ВНИМАНИЕ: это реконструкция. Seed, mapping меток и ряд деталей авторов не подтверждены.", flush=True)
     status = {
         "started_at": datetime.now().isoformat(),
         "training": "running",
@@ -265,6 +274,8 @@ def main():
                 "evaluate", "--checkpoint", best, "--manifest", MANIFEST,
                 "--out", evaluation_dir, "--device", device,
                 "--batch-size", BATCH_SIZE, "--split", "test",
+                "--bootstrap-samples", BOOTSTRAP_SAMPLES,
+                "--confidence", CONFIDENCE, "--bootstrap-seed", BOOTSTRAP_SEED,
             ])
             status["test_evaluation"] = "completed"
     except BaseException as exc:
