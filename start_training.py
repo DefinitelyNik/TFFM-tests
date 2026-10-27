@@ -25,7 +25,7 @@ RUNS_DIR = PROJECT_DIR / "runs"
 # background: белые пиксели -> 0 в обоих каналах (НЕ ignore).
 # both: белые пиксели -> 1 в обоих каналах.
 WHITE_POLICY = "background"
-LOSS = "repository"  # "repository" либо "paper"; меняется LOSS, не архитектура.
+LOSS = "paper"  # "repository" либо "paper"; меняется LOSS, не архитектура.
 BASELINE = False  # True отключает TFFM; это отдельная ablation, не режим paper.
 BOOTSTRAP_SAMPLES = 2000
 CONFIDENCE = 0.95
